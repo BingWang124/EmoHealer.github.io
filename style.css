@@ -1,31 +1,74 @@
+/* 基本重置与版面 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    line-height: 1.6;
-    background-color: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
+    background-color: #fff;
+    line-height: 1.6;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-header {
+/* 标题样式 */
+header h1 {
+    font-size: 2.8rem;
     text-align: center;
-    margin-bottom: 40px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.2em;
 }
 
-h1 {
-    color: #0055cc;
+header p {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 1.5em;
 }
 
+/* 区块分隔 */
 section {
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
 }
 
+section h2 {
+    font-size: 1.8rem;
+    color: #111;
+    margin-bottom: 0.6em;
+    position: relative;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #eee;
+}
+
+/* 链接按钮样式 */
 a {
-    margin-right: 10px;
     text-decoration: none;
-    color: #0078d7;
+    color: #0055cc;
+    margin-right: 1.2em;
+    font-size: 1rem;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+/* 媒体元素 */
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 页脚样式 */
 footer {
     text-align: center;
-    color: gray;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 4em;
 }
