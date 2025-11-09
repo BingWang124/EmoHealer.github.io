@@ -1,107 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- 基本网页信息 -->
   <meta charset="utf-8">
-  <meta name="description"
-        content="Project page for FilmComposer.">
-  <meta name="keywords" content="FilmComposer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project page for EmoHealer.">
+  <meta name="keywords" content="EmoHealer">
+  
+  <title>EmoHealer</title>
+
+  <!-- ✅ 社交媒体预览图（网页被分享时显示的缩略图） -->
   <meta property="og:image" content="./static/images/thumbnail.png"/>
   <link rel="image_src" href="./static/images/thumbnail.png">
-  <link rel="icon"
-        type="image/x-icon"
-        href="./static/images/favicon.ico"/>
 
-  <title>FilmComposer</title>
+  <!-- ✅ 网站图标（浏览器标签页左上角的小图标） -->
+  <link rel="icon" type="image/x-icon" href="./static/images/favicon.ico"/>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDF010G6PN"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- ✅ Google 字体（可选，若加载慢可删除或改成本地字体） -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  gtag('config', 'G-EDF010G6PN');
+  <!-- ✅ 网页布局与样式库 -->
+  <link rel="stylesheet" href="./static/css/bulma.min.css">          <!-- 页面布局 -->
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css"> <!-- 图标支持 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> <!-- 学术图标 -->
 
-
-  </script>
-
-  <script type="module"
-          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <!-- ✅ Slick（如果你有轮播图或滑块功能） -->
   <link rel="stylesheet" type="text/css" href="./static/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css"/>
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- ✅ 你自己网页的主要样式 -->
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="stylesheet" href="./static/css/abstract.css">
   <link rel="stylesheet" href="./static/css/videos.css">
   <link rel="stylesheet" href="./static/css/image-text.css">
 
+  <!-- ✅ jQuery（用于部分交互功能） -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- ✅ Font Awesome 脚本（用于图标渲染） -->
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
+
+  <!-- ✅ 你的网页主逻辑脚本 -->
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="">
-            FilmComposer
-          </a>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
-
+<!-- ✅ 显示项目标题（类似论文标题）和项目链接按钮（Paper / Code / Dataset 等）。>
 <section class="hero">
   <div class="hero-body">
     <div class="container">
       <div class="container has-text-centered">
         <h1 class="title is-1 publication-title">
-          FilmComposer: <br>LLM-Driven Music Production for Silent Film Clips
+          EmoHealer:<br>Valence-Arousal-Based Progressive Emotional Healing with Collaborative Audiovisual Generation
         </h1>
 
         <div class="column has-text-centered">
           <div class="publication-links">
             <!-- PDF Link. -->
             <span class="link-block">
-                <a href=""
+              <!-- ✅ 这里放论文链接。>
+                <a href=" "
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -110,6 +67,7 @@
                 </a>
               </span>
             <span class="link-block">
+              <!-- ✅ 这里放arXiv链接。>
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -119,6 +77,7 @@
                 </a>
             </span>
             <span class="link-block">
+              <!-- ✅ 这里放代码链接。>
               <a href=""
                  class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
@@ -128,6 +87,7 @@
                 </a>
             </span>
             <span class="link-block">
+              <!-- ✅ 这里放数据库链接。>
               <a href="" 
                 class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
@@ -398,3 +358,4 @@
   
 </body>
 </html>
+
