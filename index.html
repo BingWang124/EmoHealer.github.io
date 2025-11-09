@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Project page for FilmComposer.">
+  <meta name="keywords" content="FilmComposer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="./static/images/thumbnail.png"/>
+  <link rel="image_src" href="./static/images/thumbnail.png">
+  <link rel="icon"
+        type="image/x-icon"
+        href="./static/images/favicon.ico"/>
+
+  <title>FilmComposer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDF010G6PN"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EDF010G6PN');
+
+
+  </script>
+
+  <script type="module"
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/abstract.css">
+  <link rel="stylesheet" href="./static/css/videos.css">
+  <link rel="stylesheet" href="./static/css/image-text.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="">
+            FilmComposer
+          </a>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 publication-title">
+          FilmComposer: <br>LLM-Driven Music Production for Silent Film Clips
+        </h1>
+
+        <div class="column has-text-centered">
+          <div class="publication-links">
+            <!-- PDF Link. -->
+            <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+            </span>
+            <span class="link-block">
+              <a href=""
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>
+            <span class="link-block">
+              <a href="" 
+                class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face logo" style="width: 20px; height: 20px; vertical-align: middle;">
+              </span>
+              <span>Dataset</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+<section class="section video-section">
+  <div class="video-title-wrapper">
+    <h2 class="title is-2 video-title">Results of FilmComposer</h2>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/4LPnlzvIHIM?si=-9fzaAQn7KSysxAU" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section video-section">
+  <div class="video-title-wrapper2">
+    <h2 class="title is-2 video-title">Comparison with Other Models</h2>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/ttgKJ4bNmec?si=D8SNjVUoMtpHsoUp"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+-->
+  
+<section class="section video-section">
+  <div class="video-title-wrapper">
+    <h2 class="title is-2 video-title">Results of FilmComposer</h2>
+    <div class="video-container">
+      <video controls class="embedded-video">
+        <source src="videos/Filmcomposer_cvpr2025_pyq_compressed.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+<style>
+  .video-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .embedded-video {
+    width: 100%; 
+    max-width: 1200px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+</style>
+
+  
+<section class="section video-section">
+  <div class="video-title-wrapper2">
+    <h2 class="title is-2 video-title">Comparison with Other Models</h2>
+    <div class="container has-text-centered">
+      <div class="columns video-grid is-multiline is-centered">
+        <!-- 将原本的 is-one-fifth 改为 is-2 (每个占 2/12 = 1/6) -->
+        <div class="column is-2">  <!-- 修改这里 -->
+          <h3 class="video-item-title">CMT</h3>
+          <video controls>
+            <source src="videos/group1/1_cmt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-2">  <!-- 修改这里 -->
+          <h3 class="video-item-title">Video2Music</h3>
+          <video controls>
+            <source src="videos/group1/1_v2m.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <!-- 新增视频 -->
+        <div class="column is-2">
+          <h3 class="video-item-title">M2UGen</h3>  <!-- 修改标题 -->
+          <video controls>
+            <source src="videos/group1/1_filmcomposer.mp4" type="video/mp4">  <!-- 修改路径 -->
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-2">  <!-- 修改这里 -->
+          <h3 class="video-item-title">VidMuse</h3>
+          <video controls>
+            <source src="videos/group1/1_vidmuse.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-2">  <!-- 修改这里 -->
+          <h3 class="video-item-title">MusicGen</h3>
+          <video controls>
+            <source src="videos/group1/1_musicgen.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-2">  <!-- 修改这里 -->
+          <h3 class="video-item-title">FilmComposer</h3>
+          <video controls>
+            <source src="videos/group1/1_filmcomposer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
+      <div class="columns video-grid is-multiline is-centered">
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group2/2_cmt.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group2/2_v2m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group2/2_vidmuse.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group2/2_musicgen.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group2/2_filmcomposer.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="columns video-grid is-multiline is-centered">
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group3/3_cmt.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group3/3_v2m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group3/3_vidmuse.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group3/3_musicgen.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group3/3_filmcomposer.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="columns video-grid is-multiline is-centered">
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group4/4_cmt.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group4/4_v2m.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group4/4_vidmuse.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group4/4_musicgen.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-fifth">
+          <video controls>
+            <source src="videos/group4/4_filmcomposer.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section abstract-section">  
+  <div class="container has-text-centered">
+    <h2 class="title is-2 abstract-title">Abstract</h2>
+    <div class="abstract-image">
+      <img src="image/intro.png" alt="Abstract Image" />
+    </div>
+    <p class="abstract-text">
+      In this work, we implement music production for silent film clips using LLM-driven method. 
+      Given the strong professional demands of film music production, we propose the FilmComposer, simulating the actual workflows of professional musicians. 
+      FilmComposer is the first to combine large generative models with a multi-agent approach, leveraging the advantages of both waveform music and symbolic music generation. 
+      Additionally, FilmComposer is the first to focus on the three core elements of music production for film—audio quality, musicality, and musical development—and introduces various controls, such as rhythm, semantics, and visuals, to enhance these key aspects. 
+      Specifically, FilmComposer consists of the visual processing module, rhythm-controllable MusicGen, and multi-agent assessment, arrangement and mix.
+      In addition, our framework can seamlessly integrate into the actual music production pipeline and allows user intervention in every step, providing strong interactivity and a high degree of creative freedom. 
+      Furthermore, we propose MusicPro-7k which includes 7,000 film clips, music, description, rhythm spots and main melody, considering the lack of a professional and high-quality film music dataset. 
+      Finally, both the standard metrics and the new specialized metrics we propose demonstrate that the music generated by our model achieves state-of-the-art performance in terms of quality, consistency with video, diversity, musicality, and musical development. 
+    </p>
+  </div>
+</section>
+
+<section class="section abstract-section">
+  <div class="container has-text-centered">
+    <h2 class="title is-2 abstract-title">Framework</h2>
+    <div class="abstract-image-2">
+      <img src="image/pipeline_revise.png" alt="Framework Image" />
+    </div>
+    <p class="abstract-text">
+      FilmComposer consists of three main modules——visual processing, rhythm-controllable MusicGen and multi-agent assessment, arrangement and mix——to simulate the process of a human musician producing music for film.
+      Three large color blocks represent the three main modules, through which the input Film clips pass sequentially, ultimately outputting a waveform. 
+      The three blue blocks with musical notation illustrate the complete music production process, from setting the rhythm points, composing, to arranging and mixing.
+    </p>
+  </div>
+</section>
+  
+<section class="section image-text-section">
+  <div class="container has-text-centered">
+    <h2 class="title is-2 image-text-title">Dataset</h2>
+    <div class="image-text-content">
+      <div class="image-container">
+        <img src="image/dataset.png" alt="Dataset Image" />
+      </div>
+      <div class="text-container">
+        <p class="text-content">
+          Given the lack of a suitable dataset to train FilmComposer, we construct a large-scale film music dataset MusicPro-7k featuring about 7,000 samples, each with film clip, music, visual description, music description, main melody, and rhythm spots. 
+          MusicPro-7k is distinguished by its high quality, high level of professional expertise, and multi-functionality.
+          The structure and construction method of MusicPro-7k are illustrated in the gram.
+          Instead of extracting music from videos and applying noise reduction as done in earlier approaches, we invited musicians to find music specifically for silent film clips. 
+          This approach avoids the poor audio quality and degradation caused by previous extraction methods.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+</body>
+</html>

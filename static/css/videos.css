@@ -1,0 +1,81 @@
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  section.video-section {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .video-title-wrapper, .video-title-wrapper2 {
+    width: 100vw; 
+    margin: 0; 
+    padding: 20px 0; 
+    text-align: center; 
+    position: relative; 
+  }
+
+  .video-title-wrapper {
+    background-color: #b5c6e3; 
+  }
+  
+  .video-title-wrapper2 {
+    background-color: #eacbe6; 
+  }
+
+  .video-title {
+    color: black; 
+    margin: 0; 
+  }
+  
+  .video-container iframe {
+    width: 100%; 
+    max-width: 1200px;
+    height: 675px;
+    aspect-ratio: 16/9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .video-item-title {
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+    color: #333; 
+    text-align: center; 
+  }
+
+  .video-grid {
+    display: flex !important; /* 覆盖原有布局 */
+    flex-wrap: nowrap; /* 禁止换行 */
+    overflow-x: auto; /* 允许横向滚动 */
+    padding: 0 -10%; /* 保持左右留白 */
+    gap: 8px; /* 减少间隙 */
+  }
+  
+  .video-grid .column.is-2 {
+    flex: 0 0 calc(16.666% - 8px); /* 调整间隙补偿 */
+    width: calc(16.666% - 8px);
+    min-width: 160px; /* 设置最小宽度 */
+    margin: 0;
+    padding: 0 4px; /* 改用内边距控制间距 */
+  }
+  
+  video {
+    width: 100%;
+    min-height: 120px; /* 保证最小可视区域 */
+  }
+
+
+  @media (max-width: 768px) {
+    .video-container iframe {
+      height: auto; 
+    }
+  }
+</style>
